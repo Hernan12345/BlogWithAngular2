@@ -1,0 +1,13 @@
+<div class="container wfixedMenu">
+    <div class="row">
+      <div class="col-xs-12">
+        <div *ngIf="post">
+          <h3>{{ post.title }}</h3>
+          <p >{{ post.body }}</p>
+          <div *ngIf="post.pre">
+            <pre [innerHTML]=post.pre></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

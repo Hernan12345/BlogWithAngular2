@@ -1,0 +1,34 @@
+[
+  {
+    "id": 0,
+    "title": "El ZEN de Javascript: a la b\u00fasqueda de la armon\u00eda del c\u00f3digo",
+    "thubnail": "",
+    "pre": "<span style='color: #006600; font-style: italic;'>// Hermoso</span><span style='color: #000066; font-weight: bold;'>var</span> MODULE <span style='color: #339933;'>=</span><span style='color: #009900;'>(</span> <span style='color: #009900;'>(</span><span style='color: #009900;'>)</span> <span style='color: #339933;'>=&gt;</span> <span style='color: #009900;'>{</span><span style='color: #000066; font-weight: bold;'>var</span> my <span style='color: #339933;'>=</span> <span style='color: #009900;'>{</span><span style='color: #009900;'>}</span><span style='color:#339933;'>,</span>privateVariable <span style='color: #339933;'>=</span> <span style='color: #CC0000;'>1</span><span style='color: #339933;'>;</span>&nbsp;",
+    "body": "Hace ya algunos a\u00f1os, Tim Peters enunci\u00f3 El ZEN de Python, un conjunto de recomendaciones cuyo objetivo era conseguir un c\u00f3digo m\u00e1s limpio, mantenible y, en definitiva, c\u00f3modo para los desarrolladores. No se trata de un sistema r\u00edgido e inflexible, o de unas normas de estilo que hay que seguir a raja tabla, sino de una serie de aspectos que pueden ayudarnos a la hora de conseguir un c\u00f3digo en armon\u00eda.No cabe duda de que Javascript comparte muchas caracter\u00edsticas con Python, y es por ello que podemos adaptar el ZEN de Python a nuestro lenguaje sin muchas complicaciones. En este art\u00edculo, daremos un repaso a este manifiesto aportando ejemplos ilustrativos en JS.",
+    "source": "http:\/\/www.etnassoft.com\/"
+  },
+  {
+    "id": 1,
+    "title": "Desestructuraci\u00f3n en Javascript. Parte 2 (recetas y ejemplos)",
+    "thubnail": "",
+    "pre": "",
+    "body": "En el anterior art\u00edculo revisamos la sintaxis, teor\u00eda y algunos ejemplos de esta nueva funcionalidad en ES6 que es la desestructuraci\u00f3n.Vamos a completar ahora la teor\u00eda con muchos ejemplos, o recetas, m\u00e1s complejos que iremos comentando seg\u00fan sea necesario. \u00a1Vamos a ello!Combinando objetos y arrays. Como ya vimos, la desestructuraci\u00f3n puede aplicarse sobre cualquier tipo de colecci\u00f3n, ya sea un array, un objeto. Pero incluso podemos combinar ambos al mismo tiempo:",
+    "source": "Carlos Benitez"
+  },
+  {
+    "id": 2,
+    "title": "Atajos (shortcuts) en la definici\u00f3n de m\u00e9todos con ES6",
+    "thubnail": "",
+    "pre": "",
+    "body": "Otra de las novedades del est\u00e1ndar ES6 son los atajos, o shortcuts, en la definici\u00f3n de m\u00e9todos dentro de un objeto. Son un aspecto menor, pero ahorran espacio y hacen el c\u00f3digo m\u00e1s legible y menos redundante en general. \u00a1Echemos un vistazo a esta nueva funcionalidad!",
+    "source": "http:\/\/www.etnassoft.com\/"
+  },
+  {
+    "id": 3,
+    "title": "Las Funciones Flecha en Javascript. Parte 3",
+    "thubnail": "",
+    "pre": "",
+    "body": "Para concluir esta introducci\u00f3n a las Funciones Flechas en el nuevo est\u00e1ndar ES6 (primera parte, segunda parte), no podemos dejar de repasar la correspondencia entre \u00e9stas y el m\u00e9todo bind que ya hemos estudiado.Echemos un vistazo a c\u00f3mo las nuevas estructuras pueden reemplazar de un modo limpio y directo a otras ya anticuadas\u2026",
+    "source": "http:\/\/www.etnassoft.com\/"
+  }
+]
