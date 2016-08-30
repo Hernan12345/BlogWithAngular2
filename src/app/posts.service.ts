@@ -25,30 +25,12 @@ export class PostService {
             .catch(this.handleError)
     }
 
-    getPost(id: any): Observable<Post> {
+    getPost(id: string): Observable<Post> {
         return this.getPosts()
-            .map((posts: Post[]) => posts.find(post => post._id === id));
-    }
-
-    savePost(post:Post):Observable<Post> {
-        let body = JSON.stringify(post);
-        let options = new RequestOptions({ headers: this.headers });
-        return this._http.post(this._baseUrl+'/addpost', body, options)
-            .map(this.extractData, this.getPosts)
-            .catch(this.handleError);
+            .map((posts:Post[]) => posts.find(post => post.id === id))
             
     }
 
-    deletePost(id:any):Observable<Post> {
-        let options = new RequestOptions({ headers: this.headers });
-        return this._http.delete(this._baseUrl+'/deletepost/'+id,  options)
-             .map(()=> console.log('Registro Borrado'))
-             .catch(this.handleError);             
-    }
-
-    goTo(url:string):void{
-        this._router.navigate(['/'+url])
-    }
 
     private handleError(error: Response) {
         // in a real world app, we may send the server to some remote logging infrastructure

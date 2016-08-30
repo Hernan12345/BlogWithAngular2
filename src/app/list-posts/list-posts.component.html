@@ -1,9 +1,13 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="col-md-3 col-sm-3 col-xs-12">
-          <img src="./app/images/img_profile_sou_eu.png" width="90" class="img-responsive img-circle" alt="Sou Eu">
+      <div class="col-md-2 col-sm-2 col-xs-12">
+          <h1>MY</h1>
+          <h4>BLOG</h4>
+          <hr>
+          <p>Personal Blog</p>
+          <!-- <img src="./app/vendors/images/img_profile_sou_eu.png" width="90" class="img-responsive img-circle" alt="Sou Eu"> -->
       </div>
-      <div class="col-md-9 col-sm-9 col-xs-12">
+      <div class="col-md-7 col-sm-7 col-md-offset-1 col-sm-offset-1 col-xs-12">
         <ul class="list-unstyled posts">
             <li *ngFor="let post of posts">
                 <h3>{{ post.title }}</h3>

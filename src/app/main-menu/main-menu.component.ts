@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES }  from '@angular/router';
 import { ListPostsComponent } from './../list-posts/list-posts.component';
 
 @Component({
-  moduleId: module.id,
+  //moduleId: module.id,
   selector: 'app-main-menu',
   templateUrl: 'main-menu.component.html',
   styleUrls: ['main-menu.component.css'],

@@ -9,10 +9,10 @@ require('./src/app/models/postschema');
 var Post = mongoose.model('Post');
 var tumblr = require('tumblr.js');
 var client = tumblr.createClient({
-    consumer_key: '',
-    consumer_secret: '',
-    token: '',
-    token_secret: ''
+    consumer_key: 'K7HN5nYgouqnMwCPTO47dcXF0vGq0GTxHeFNaKnZIX7aFD0v1M',
+    consumer_secret: 'ikuNfdUI0tJobcMioXszS642EYwq1uFzj8v1hmoWU4Zy4xEo2E',
+    token: '0FInyFb3AFY8vtrqpSUoUCyH0yEsS7pTGs5Acp0a7JfTLb74QT',
+    token_secret: '6HXBv4vnkrfwZLrUJA2RjVGCu84YmMakEoZHk1PssEBRZhTMYO'
 });
 
 

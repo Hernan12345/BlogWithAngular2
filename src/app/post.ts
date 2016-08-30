@@ -1,16 +1,16 @@
 /* Defines the product entity */
 export interface iPost {
-    _id: any;
+    id: string;
     title: string;
-    body: string;
+    summary: string;
     pre: string;
     source: string;
 }
 
 export class Post implements iPost {
-    _id: any;
+    id: string;
     title: string;
-    body: string;
+    summary: string;
     pre: string;
     source: string;
 

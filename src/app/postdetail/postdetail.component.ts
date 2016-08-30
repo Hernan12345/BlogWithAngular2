@@ -4,14 +4,14 @@ import { PostService } from './../posts.service';
 import { Post } from './../post';
 
 @Component({
-  moduleId: module.id,
+  //moduleId: module.id,
   selector: 'app-postdetail',
   templateUrl: 'postdetail.component.html',
   styleUrls: ['postdetail.component.css']
 })
 
 export class PostdetailComponent implements OnInit {
-  post: Post;
+  private post: Post;
   private sub: any;
   errorMessage:string;
   
@@ -24,7 +24,7 @@ export class PostdetailComponent implements OnInit {
     this.sub = this.route.params.subscribe(params => {
        let id = params['id']; // (+) converts string 'id' to a number
        this.service.getPost(id).subscribe(post => {
-         this.post = post 
+         this.post = post;
         });
      });
   }

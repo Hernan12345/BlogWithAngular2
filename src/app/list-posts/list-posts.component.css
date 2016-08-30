@@ -19,8 +19,3 @@ a span {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.glyphicon-remove {
-    position: absolute;
-    right: 0;
-    top: 10px;
-}

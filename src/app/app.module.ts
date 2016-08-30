@@ -1,15 +1,32 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule  } from '@angular/platform-browser';
-import { AppComponent }   from './app.component';
-import { APP_ROUTER_PROVIDERS } from './app.routes';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule, ApplicationRef,  } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http'
+import { AppComponent }  from './app.component';
+import { HttpModule }  from '@angular/http';
+import { ListPostsComponent } from './list-posts/list-posts.component';
+import { PostdetailComponent } from './postdetail/postdetail.component';
+import { PostService } from './posts.service';
+import { routing } from './app.routes';
+
 
 @NgModule({
-    declarations: [AppComponent],
-    imports     : [BrowserModule, FormsModule, HttpModule],
-    bootstrap   : [AppComponent],
-    providers   : [APP_ROUTER_PROVIDERS]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    routing
+  ],
+  declarations: [
+    AppComponent,
+    ListPostsComponent,
+    PostdetailComponent
+  ],
+  providers: [
+    PostService
+  ],
+  bootstrap: [ AppComponent ]
 })
+
+
 
 export class AppModule {}
