@@ -1,0 +1,24 @@
+body {
+    background: red;
+}
+.wfixedMenu {
+    margin-top: 70px
+}
+
+ul.posts li {
+    position: relative;
+}
+ul li a {
+    cursor: pointer
+}
+a span {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+.truncate {
+  width: 45%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
