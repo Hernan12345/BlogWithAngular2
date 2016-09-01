@@ -45,4 +45,8 @@ export class ListPostsComponent implements OnInit {
         return this._sanitizer.bypassSecurityTrustResourceUrl(this.dangerousVideoUrl);
     }
 
+    selectDetail(post:Post) {
+        console.log(post);
+    }
+
 }

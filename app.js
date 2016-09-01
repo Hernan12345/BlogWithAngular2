@@ -2,11 +2,8 @@ var express = require('express');
 var morgan = require('morgan'); // logger
 var assert = require('assert');
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
 var app = express();
 var router = express.Router();
-require('./src/app/models/postschema');
-var Post = mongoose.model('Post');
 var tumblr = require('tumblr.js');
 var client = tumblr.createClient({
     consumer_key: 'K7HN5nYgouqnMwCPTO47dcXF0vGq0GTxHeFNaKnZIX7aFD0v1M',
@@ -21,9 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(morgan('dev'));
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://hernanuser:Cantalapiedra47@ds031835.mlab.com:31835/mysinglesposts");
-var db = mongoose.connection;
+
 
 
 //middleware to log all requests
@@ -61,30 +56,6 @@ app.use(router);
         });
     });
     
-    // Post (Add a New Blog)
-    app.post('/addpost', function(req, res, next) { 
-        var _post = new Post();
-        // Define a model to save 
-        _post.id = mongoose.Types.ObjectId();
-        _post.title = req.body.title;
-        _post.body = req.body.body;
-        _post.source = req.body.source;
-
-        _post.save(function(err, post) {
-            if(err) return res.status(500).send( err.message);
-            res.status(200).jsonp(post);
-        });
-    });
-
-    // Post (Delete a Blog)
-    app.delete('/deletepost/:id', function(req, res, next) {
-        Post.findById(req.params.id, function(err, post) {
-            post.remove(function(err) {
-                if(err) return res.status(500).send(err.message);
-                res.status(200).send();
-            })
-        })
-    });
 
 
     
